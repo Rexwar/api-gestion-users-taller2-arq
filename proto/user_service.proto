@@ -3,23 +3,22 @@ syntax = "proto3";
 package user;
 
 service UserService {
-  // Registra un nuevo usuario
   rpc Register (RegisterRequest) returns (RegisterResponse);
-  
-  // Actualiza la contraseña de un usuario
   rpc UpdatePassword (UpdatePasswordRequest) returns (UpdatePasswordResponse);
 }
 
 message RegisterRequest {
-  string name = 1;
-  string surname = 2;
-  string surname2 = 3;
-  string email = 4;
-  string password = 5;
+  string nombre = 1;
+  string primer_apellido = 2;
+  string segundo_apellido = 3;
+  string rut = 4;
+  string correo = 5;
+  int32 carrera_id = 6;
 }
 
 message RegisterResponse {
   string message = 1;
+  int32 user_id = 2;
 }
 
 message UpdatePasswordRequest {

@@ -5,7 +5,7 @@ from user_service_pb2_grpc import UserServiceStub
 def run():
     try:
         # Crear canal y cliente gRPC
-        channel = grpc.insecure_channel('localhost:50053')  # Asegúrate de que el puerto sea correcto
+        channel = grpc.insecure_channel('localhost:5053')  # Asegúrate de que el puerto sea correcto
         stub = UserServiceStub(channel)
 
         # Probar el registro de usuario
