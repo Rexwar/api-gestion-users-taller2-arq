@@ -1,0 +1,39 @@
+#flask # Entorno virtual
+venv/
+*.env
+
+# Archivos de compilación de Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
+
+# Archivos temporales de editor
+*~
+# MacOS
+.DS_Store
+
+# Archivos de configuración de Python
+*.sqlite3
+db.sqlite3
+
+# Logs
+*.log
+
+# Archivos de dependencias
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Archivos generados por gRPC
+user_service_pb2.py
+user_service_pb2_grpc.py
+
+# Archivos del sistema de Windows
+Thumbs.db
+ehthumbs.db
